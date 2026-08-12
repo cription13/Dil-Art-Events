@@ -1,0 +1,412 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Inter, -apple-system, BlinkMacSystemFont,
+                         "Segoe UI", Roboto, Arial, sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at top left,
+                    rgba(255, 214, 140, 0.25),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at bottom right,
+                    rgba(255, 180, 120, 0.16),
+                    transparent 35%
+                ),
+                #f7f4ef;
+
+            color: #25211d;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 24px;
+        }
+
+        /* Main payment container */
+
+        .payment-page {
+            width: 100%;
+            max-width: 440px;
+        }
+
+        .payment-card {
+            background: rgba(255, 255, 255, 0.92);
+
+            border: 1px solid rgba(60, 45, 30, 0.08);
+
+            border-radius: 28px;
+
+            padding: 34px 28px 28px;
+
+            box-shadow:
+                0 25px 70px rgba(50, 40, 30, 0.10),
+                0 4px 15px rgba(50, 40, 30, 0.04);
+
+            text-align: center;
+
+            backdrop-filter: blur(15px);
+        }
+
+        /* Academy logo */
+
+        .logo {
+            width: 64px;
+            height: 64px;
+
+            margin: 0 auto 18px;
+
+            border-radius: 18px;
+
+            background: #1f1b17;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: #d8b16a;
+
+            font-size: 22px;
+            font-weight: 800;
+
+            letter-spacing: -1px;
+
+            box-shadow:
+                0 10px 25px rgba(31, 27, 23, 0.18);
+        }
+
+        /* Heading */
+
+        .academy-name {
+            font-size: 25px;
+            font-weight: 750;
+
+            letter-spacing: -0.7px;
+
+            color: #211d19;
+
+            line-height: 1.2;
+        }
+
+        .academy-subtitle {
+            margin-top: 8px;
+
+            color: #81786f;
+
+            font-size: 13px;
+
+            line-height: 1.5;
+        }
+
+        /* Divider */
+
+        .divider {
+            width: 55px;
+            height: 3px;
+
+            background: #c8a36a;
+
+            border-radius: 20px;
+
+            margin: 22px auto;
+        }
+
+        /* Payment heading */
+
+        .payment-title {
+            font-size: 18px;
+            font-weight: 700;
+
+            margin-bottom: 6px;
+
+            color: #28231e;
+        }
+
+        .payment-description {
+            color: #8a8178;
+
+            font-size: 13px;
+
+            line-height: 1.5;
+
+            margin-bottom: 20px;
+        }
+
+        /* Amount */
+
+        .amount-box {
+            background: #faf7f2;
+
+            border: 1px solid #eee5d9;
+
+            border-radius: 18px;
+
+            padding: 16px;
+
+            margin-bottom: 22px;
+        }
+
+        .amount-label {
+            font-size: 11px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.4px;
+
+            color: #978b7d;
+
+            margin-bottom: 4px;
+        }
+
+        .amount {
+            font-size: 30px;
+
+            font-weight: 800;
+
+            color: #211d19;
+
+            letter-spacing: -1px;
+        }
+
+        /* QR */
+
+        .qr-section {
+            margin-top: 4px;
+        }
+
+        .qr-label {
+            font-size: 13px;
+
+            color: #756d65;
+
+            margin-bottom: 13px;
+        }
+
+        .qr-wrapper {
+            width: 210px;
+            height: 210px;
+
+            margin: 0 auto;
+
+            background: white;
+
+            padding: 12px;
+
+            border-radius: 20px;
+
+            border: 1px solid #eee8df;
+
+            box-shadow:
+                0 10px 30px rgba(40, 30, 20, 0.06);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .qr-wrapper img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: contain;
+
+            border-radius: 8px;
+        }
+
+        /* Replace QR */
+
+        .qr-placeholder {
+            width: 100%;
+            height: 100%;
+
+            border-radius: 8px;
+
+            background:
+                repeating-linear-gradient(
+                    45deg,
+                    #f1eee8,
+                    #f1eee8 5px,
+                    #ffffff 5px,
+                    #ffffff 10px
+                );
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: #8b8175;
+
+            font-size: 12px;
+
+            padding: 20px;
+
+            text-align: center;
+        }
+
+        .qr-placeholder img {
+            position: fixed;
+            width: 50%;
+            height: 50%;
+            overflow: hidden;
+        }
+
+        /* Scan text */
+
+        .scan-text {
+            margin-top: 12px;
+
+            font-size: 12px;
+
+            color: #999087;
+        }
+
+        /* Pay button */
+
+        .pay-button {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+
+            height: 58px;
+
+            margin-top: 23px;
+
+            border: none;
+
+            border-radius: 16px;
+
+            background: #211d19;
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 16px;
+
+            font-weight: 700;
+
+            letter-spacing: -0.1px;
+
+            cursor: pointer;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                background 0.2s ease;
+        }
+
+        .pay-button:hover {
+            transform: translateY(-2px);
+
+            background: #302a24;
+
+            box-shadow:
+                0 12px 25px rgba(33, 29, 25, 0.20);
+        }
+
+        .pay-button:active {
+            transform: translateY(0);
+        }
+
+        .arrow {
+            margin-left: 9px;
+
+            font-size: 18px;
+
+            transition: transform 0.2s ease;
+        }
+
+        .pay-button:hover .arrow {
+            transform: translateX(4px);
+        }
+
+        /* Security */
+
+        .secure {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            gap: 6px;
+
+            margin-top: 16px;
+
+            font-size: 11px;
+
+            color: #989087;
+        }
+
+        .secure-icon {
+            width: 14px;
+            height: 14px;
+
+            border: 1px solid #aaa197;
+
+            border-radius: 4px;
+
+            font-size: 8px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Footer */
+
+        .footer {
+            margin-top: 22px;
+
+            padding-top: 18px;
+
+            border-top: 1px solid #eee9e2;
+
+            color: #a0978d;
+
+            font-size: 11px;
+
+            line-height: 1.5;
+        }
+
+        .footer strong {
+            color: #766d63;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 480px) {
+
+            body {
+                padding: 14px;
+            }
+
+            .payment-card {
+                padding: 28px 20px 22px;
+
+                border-radius: 24px;
+            }
+
+            .academy-name {
+                font-size: 22px;
+            }
+
+            .qr-wrapper {
+                width: 195px;
+                height: 195px;
+            }
+
+            .amount {
+                font-size: 28px;
+            }
+        }

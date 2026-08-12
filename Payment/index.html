@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Make Payment | Dileep Dil Art Academy</title>
+
+    <meta
+        name="description"
+        content="Secure payment page for Dileep Dil Art Academy."
+    >
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="payment-page">
+
+        <section class="payment-card">
+
+            <!-- Academy Logo -->
+            <div class="logo">
+                ART
+            </div>
+
+            <!-- Academy -->
+            <h1 class="academy-name">
+                Dileep Dil Art Academy
+            </h1>
+
+            <p class="academy-subtitle">
+                Drawing & Art Education
+            </p>
+
+            <div class="divider"></div>
+
+            <!-- Payment -->
+            <h2 class="payment-title">
+                Make Your Payment
+            </h2>
+
+            <p class="payment-description">
+                Complete your payment for your selected
+                course, class, workshop or art training program.
+            </p>
+
+            <!-- Amount -->
+            <div class="amount-box">
+
+                <div class="amount-label">
+                    Amount Payable
+                </div>
+
+                <div class="amount">
+                    ₹ 499
+                </div>
+
+            </div>
+
+            <!-- QR -->
+            <div class="qr-section">
+
+                <div class="qr-label">
+                    Scan the QR code to pay
+                </div>
+
+                <div class="qr-wrapper">
+
+                    <!--
+                        REPLACE THIS WITH YOUR QR IMAGE
+
+                        Example:
+                        <img src="payment-qr.png"
+                             alt="Dileep Dil Art Academy Payment QR Code">
+                    -->
+
+                    <div class="qr-placeholder">
+                        <img src="assets/payment-qr.jpeg"
+                             alt="Dileep Dil Art Academy Payment QR Code">
+                    </div>
+
+                </div>
+
+                <div class="scan-text">
+                    Scan using any supported UPI app
+                </div>
+
+            </div>
+
+            <!-- Payment Button -->
+
+            <!--
+                ADD YOUR PAYMENT LINK HERE LATER
+
+                Example:
+                href="YOUR_PAYMENT_LINK"
+            -->
+
+            <a
+                href="upi:pay?pa=dileepdilktba-1@oksbi&pn=Dileep&am=499&cu=INR"
+                class="pay-button"
+                id="payButton"
+            >
+                Pay Now
+                <span class="arrow">→</span>
+            </a>
+
+            <!-- Security -->
+            <div class="secure">
+                <span class="secure-icon">✓</span>
+                Secure payment
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                Payment for services provided by
+                <strong>Dileep Dil Art Academy</strong>.
+                <br>
+                Online & Offline Drawing and Art Training.
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
